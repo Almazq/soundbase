@@ -1,0 +1,72 @@
+.aboutPage{
+    width: 100%;
+    padding: 40px 8%;
+
+}
+.aboutPage h1{
+    font-family: 'Montserrat Bold';
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 54.86px;
+    margin-bottom: 40px ;
+    color: #212123;
+
+}
+.aboutPage h2{
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 39.01px;
+    margin-bottom: 30px ;
+    color: #212123;
+
+}
+.aboutPage__textBlock{
+    padding-top: 20px;
+    border-top: 1px solid #21212326;
+    width: 60%;
+    padding-bottom: 30px;
+}
+.aboutPage__textBlock h3{
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 29.26px;
+    color: #212123;
+    margin-bottom: 10px;
+
+}
+.aboutPage__textBlock p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #212123c6;
+
+}
+.aboutPage img{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 10px ;
+}
+
+@media (max-width: 576px) {
+    .aboutPage__textBlock{
+        width: 100%;
+    }
+}
+@media (min-width: 759px) and (max-width: 1024px) {
+    .aboutPage__textBlock{
+        width: 100%;
+    }
+}
+
+body.dark-theme{
+    background: #212123;
+    color: #FAFAFA;
+
+}
+body.dark-theme h1 , body.dark-theme p , body.dark-theme h2 , body.dark-theme h3 , body.dark-theme a {
+    color: #FAFAFA;
+
+}
