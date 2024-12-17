@@ -440,7 +440,7 @@
     align-items: center;
     justify-content: center;
     background: #0B904B;
-
+    font-family: 'Montserrat';
 
 }
 .download-block__btn:hover{
@@ -776,14 +776,33 @@
     }
  
 }
+@media (min-width: 576px) and (max-width: 800px) {
+    .promo{
+        position: relative;
+        padding: 0;
+        height: 100%;
+    }
 
-/* Планшеты в портретной ориентации (от 577px до 768px) */
-@media (min-width: 577px) and (max-width: 768px) {
-    /* Здесь стили для планшетов в портретной ориентации */
-}
-
-/* Планшеты в ландшафтной ориентации и маленькие ноутбуки (от 769px до 1024px) */
-@media (min-width: 759px) and (max-width: 1024px) {
+    .promo-left{
+        z-index: 2;
+        width: 100%;
+        background-color: #c8c8c85d;
+        padding: 90px 5%;
+        backdrop-filter: blur(1px);
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+    .promo-right{
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .albums__list {
         grid-template-columns: 1fr 1fr ;
         gap: 23px;
@@ -827,14 +846,84 @@
         font-size: 2.1rem;
         line-height: 40.86px;
     }
+    .download-btn{
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    .download-btn span img {
+        width: 35px;
+        height: 20px;
+    }
 }
 
-/* Стандартные ноутбуки (от 1025px до 1200px) */
-@media (min-width: 1025px) and (max-width: 1200px) {
-    /* Здесь стили для стандартных ноутбуков */
+@media (min-width: 800px) and (max-width: 1024px) {
+    .albums__list {
+        grid-template-columns: 1fr 1fr ;
+        gap: 23px;
+    }
+    .price-block {
+        grid-template-columns: 1fr 1fr;
+    }
+    .advantages {
+        grid-template-columns: 1fr;
+    }
+    .advantages__item{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        margin-bottom: 30px;
+    }
+    .advantages__item-title {
+        grid-column: 1; 
+        grid-row: 1; 
+    }
+    
+    .advantages__item-list {
+        grid-column: 1; 
+        grid-row: 2;
+    }
+    
+    .advantages__item-img {
+        grid-column: 2; 
+        grid-row: 1 / span 2;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 100%;
+    }
+    .advantages__item-img img{
+        width: 60%;
+        height: auto;
+        max-height: 70%;
+    }
+    .advantages__item-title h1{
+        font-size: 2.1rem;
+        line-height: 40.86px;
+    }
+    .download-btn{
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    .download-btn span img {
+        width: 35px;
+        height: 20px;
+    }
 }
 
-/* Большие экраны (от 1201px и выше) */
+@media (min-width: 1025px) and (max-width: 1290px) {
+    .download-btn{
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    .download-btn span img {
+        width: 35px;
+        height: 20px;
+    }
+    .albums-item__img-block{
+        height: 230px;
+    }
+}
+
 @media (min-width: 1701px) {
     header , .promo ,.albums , .price-block , .footer {
         padding-left: 9%;

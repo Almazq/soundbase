@@ -271,7 +271,10 @@
     line-height: 19.2px;
     text-align: center;
 }
-
+.download-block__btn{
+    font-family: 'Montserrat';
+    
+}
 
 @media (max-width: 576px) {
     .shop{

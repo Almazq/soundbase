@@ -273,7 +273,7 @@ header .logo-img{
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 706px) {
     header{
         padding: 10px 3%;
         height: 75px;
@@ -286,7 +286,7 @@ header .logo-img{
         align-items: center;
         text-decoration: none;
     }
-    .logo-img {
+    header .logo-img{
         width: 40px;
         height: 41px;
     }
@@ -398,7 +398,7 @@ header .logo-img{
     }
     
 }
-@media (min-width: 759px) and (max-width: 1024px) {
+@media (min-width: 706px ) and (max-width: 1024px) {
     header{
         padding: 0 2%;
     }
@@ -428,6 +428,31 @@ header .logo-img{
         display: none;
     }
 }
+@media (min-width: 1025px) and (max-width: 1290px) {
+    .navigation-link{
+        font-size: 14px;
+        padding: 0 10px;
+        white-space: nowrap;
+    }
+    .navigation {
+        gap: 15px;
+    }
+    header .logo-img {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2px;
+    }
+    .logo-title {
+        font-size: 22px;
+    }
+    .logo-small_txt{
+        font-size: 12px;
+    }
+}
+
 
 body.dark-theme{
     background: #212123;
