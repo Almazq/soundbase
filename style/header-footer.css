@@ -58,15 +58,17 @@ header .logo{
     text-decoration: none;
 }
 header .logo-img{
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 2px;
 }
 .logo-img img{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .logo-txt{
     width: auto;
