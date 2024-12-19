@@ -396,6 +396,9 @@ header .logo-img{
     .footer{
         flex-wrap: wrap;
     }
+    .footer .logo-title , .logo-title{
+        font-size: 17.5px;
+    }
     
 }
 @media (min-width: 706px ) and (max-width: 1024px) {

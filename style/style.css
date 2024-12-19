@@ -774,6 +774,10 @@
     .advantages{
         grid-template-columns: 1fr;
     }
+    
+    .download-block__btn{
+        font-size: 12px;
+    }
  
 }
 @media (min-width: 576px) and (max-width: 800px) {
