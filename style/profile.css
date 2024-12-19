@@ -663,10 +663,10 @@ body.dark-theme{
     color: #FAFAFA;
 
 }
-body.dark-theme h1 , body.dark-theme p , body.dark-theme h3 , body.dark-theme a , .profilePage__title-description {
+body.dark-theme h1 , body.dark-theme p , body.dark-theme h3 , body.dark-theme a , body.dark-theme .profilePage__title-description {
     color: #FAFAFA;
 }
-body.dark-theme .content__block h2 , body.dark-theme .content__block p , body.dark-theme .content__block h3 , body.dark-theme .order-infoBlock__table div , .user-payinfoBlock h3{
+body.dark-theme .content__block h2 , body.dark-theme .content__block p , body.dark-theme .content__block h3 , body.dark-theme .order-infoBlock__table div , body.dark-theme .user-payinfoBlock h3{
     color: #1C2434 ;
 }
 
