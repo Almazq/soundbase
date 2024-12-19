@@ -1,0 +1,675 @@
+.profilePage {
+    width: 100%;
+    padding: 30px 8%;
+}
+.profilePage__title{
+    width: 35%;
+}
+.profilePage__title h1{
+    font-family: 'Montserrat Bold';
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 54.86px;
+    margin-bottom: 10px;
+    color: #212123;
+}
+.profilePage__title p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #212123b6;
+    margin-bottom: 10px;
+    
+}
+.profilePage__title p span{
+    font-family: 'Montserrat Bold';
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19.5px;
+
+}
+
+.profilePage__title-description{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #212123b6;
+    margin-bottom: 10px;
+}
+.profilePage__title-description span{
+    text-decoration: underline;
+}
+.profilePage__wrapper {
+    width: 100%;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 18% 82%;
+    margin-top: 40px;
+    align-items: flex-start;
+}
+.profilePage__nav{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    border: 1px solid #2121230D;
+    box-shadow: 0px 8px 13px -3px #0000001a;
+    background: #FAFAFA;
+}
+.profilePage__nav ul{
+    width: 100%;
+    height: auto;
+}
+.profilePage__nav ul li{
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    padding: 22px 0;
+    font-family: 'Montserrat';
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 24px;
+    border-bottom: 1px solid #2121221A;
+    cursor: pointer;
+    color: #1C2434;
+}
+.nav__item.nav__item--active{
+    color: #0B904B;
+}
+.nav__item a{
+    color: #1C2434;
+    text-decoration: none;
+}
+.nav__item.logout a{
+    color: #D93A3A;
+
+}
+.profilePage__nav ul li:last-child{
+    border: none;
+}
+
+
+.user-payinfoBlock{
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #2121230D;
+    box-shadow: 0px 8px 13px -3px #0000001a;
+    background: #FAFAFA;
+    margin-top: 20px;
+    padding: 30px;
+    height: auto;
+    display: none;
+
+}
+.user-payinfoBlock h3{
+    font-family: 'Montserrat';
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 20px;
+    color: #212B36;
+
+}
+.user-payinfoBlock p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #212123b7;
+
+}
+.user-payinfoBlock.activeBlock{
+    display: block;
+}
+
+
+.profilePage__content{
+    width: 100%;
+    height: auto;
+}
+.profilePage__content__row{
+    width: 100%;
+    height: 100%;
+    min-height: 276px;
+
+    border-radius: 30px;
+    border: 1px solid #2121230D;
+    box-shadow: 0px 8px 13px -3px #0000001a;
+    background: #FAFAFA;
+}
+.content__block{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+.content__block h2{
+    font-family: 'Montserrat Bold';
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.content__block-orders{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border: 1px solid #2121222e;
+    border-radius: 15px;
+}
+.content__block-orders-title{
+    width: 100%;
+    padding: 15px 30px ;
+    border-bottom: 1px solid #2121221A;
+
+}
+.content__block-orders-title ul , .content__block-orders__item ul{
+    display: grid;
+    grid-template-columns: 11% 20% 20% 26% 23%;
+}
+.content__block-orders-title ul li{
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color:#1C2434;
+}
+.content__block-orders__item{
+    width: 100%;
+    padding: 22px 30px;
+    border-bottom: 1px solid #2121221A;
+}
+.content__block-orders__item:last-child{
+    border: none;
+}
+.orders__list-item{
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #212123;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.orders__list-item.order-id{
+    color: #0B904B;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.orders__list-item button{
+    height: 46px;
+    padding: 14px 40px;
+    border-radius: 30px ;
+    background: #0B904B;
+    font-family: 'Montserrat Regular';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.2px;
+    color: #FAFAFA;
+    border: none;
+    cursor: pointer;
+}
+
+.content__block-order-empty{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+.content__block-order-empty p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #212123ba;
+    width: 100%;
+    padding: 10px 0;
+
+}
+.content__block-order-empty a{
+    height: 45px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 26px;
+    border-radius: 30px;
+    background: #0B904B;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+.order-infoBlock{
+    width: 100%;
+    height: 100%;
+    
+}
+.order-infoBlock h3{
+    width: 100%;
+    font-family: 'Montserrat Bold';
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #212B36;
+
+}
+.order-infoBlock > p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #212123;
+    width: 40%;
+    margin-top: 15px;
+
+}
+.order-infoBlock > p span{
+    color: #0B904B;
+
+}
+.order-infoBlock__table{
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid #2121222d;
+
+}
+
+.order-infoBlock__table-title{
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+    display: grid;
+    border-bottom: 1px solid #2121221A;
+}
+.order-infoBlock__table-title > div{
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.order-infoBlock__table-item{
+    width: 100%;
+    display: grid;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 35px 20px;
+    border-bottom: 1px solid #2121221A;
+}
+.order-infoBlock__table-results{
+    width: 100%;
+    display: grid;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 30px 20px;
+    border-bottom: 1px solid #2121221A;
+}
+.order-infoBlock__table-results , .order-infoBlock__table-item , .order-infoBlock__table-title{
+    grid-template-columns: 63% 37%;
+
+}
+.order-infoBlock__table-results:last-child{
+    border: none;
+}
+.order-infoBlock__btn{
+    height: 48px;
+    width: 194px;
+    padding: 0 33px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0B904B;
+    text-decoration: none;
+    font-family: 'Montserrat Regular';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color: #FAFAFA;
+    margin-top: 30px ;
+}
+
+
+
+.content__block.addresses > p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #212123ac;
+    width: 45%;
+    margin: 10px 0;
+
+}
+.addresses__inputs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+.addresses__inputs form{
+    width: 100%;
+}
+.addresses__inputs form p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1C2434;
+    margin-bottom: 8px;
+}
+.addresses__inputs form input{
+    height: 48px;
+    border-radius: 8px ;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    padding: 0 15px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #212123;
+    width: 100%;
+    outline: none;
+}
+.addresses__inputs form button{
+    width: 150px;
+    height: 46px;
+    border-radius: 30px ;
+    background: #0B904B;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.questionnaire{
+    padding: 0;
+}
+.questionnaire__inputs{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+    gap: 25px 30px;
+}
+.questionnaire__inputs p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1C2434;
+    margin-bottom: 8px;
+    padding-left: 2px;
+}
+.questionnaire__inputs input{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px ;
+    padding: 0 15px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: 1px solid #E2E8F0;
+    background: #FFFFFF;
+    outline: none;
+    color: #212123;
+
+}
+.questionnaire__topBlock{
+    border-bottom: 1px solid #2121221A;
+    padding: 30px;
+
+}
+.questionnaire-description{
+    width: 50%;
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #212123c3;
+}
+.questionnaire__bottomBlock{
+    padding: 30px;
+}
+.questionnaire__bottomBlock-inputConteiner{
+    width: 100%;
+    margin: 20px 0;
+}
+.questionnaire__bottomBlock-inputConteiner p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1C2434;
+    padding-left: 3px;
+    margin-bottom: 10px;
+
+}
+
+.questionnaire__bottomBlock-input {
+    width: 100%;
+    margin-top: 6px;
+    position: relative;
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.questionnaire__bottomBlock-input input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 33px 0 20px;
+    border: 1px solid #E2E8F0;
+    border-radius: 9px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.questionnaire__bottomBlock-input span {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translate(0%, -50%);
+
+}
+
+.input-passshowBtn{
+    cursor: pointer;
+
+}
+.questionnaire-btn{
+    height: 45px;
+    padding: 0 35px ;
+    border-radius: 30px ;
+    background: #0B904B;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color: #FAFAFA;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+.content__block {
+    display: none;
+}
+  
+.content__block--active {
+    display: block;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .profilePage{
+        padding: 40px 2%;
+    }
+    .profilePage__title{
+        width: 100%;
+    }
+    .profilePage__title-description{
+        font-size:0.9rem;
+    }
+    .profilePage__wrapper{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .profilePage__nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .order-data , .order-status , .title-status , .title-date{
+        display: none;
+    }
+    .profilePage__nav ul li , .orders__list-item{
+        font-size: 0.9rem;
+    }
+    .content__block{
+        padding: 30px 10px;
+    }
+    .content__block-orders-title ul, .content__block-orders__item ul{
+        grid-template-columns: 20% 50% 30%;
+    }
+    .orders__list-item button{
+        border: none;
+        background-color: #ffffff00;
+        height: auto;
+        text-decoration: underline;
+        color: #0B904B;
+        padding: 0;
+    }
+    .order-infoBlock > p , .content__block.addresses > p , .order-infoBlock__table , .questionnaire-description{
+        width: 100%;
+    }
+    .addresses__inputs , .questionnaire__inputs{
+        grid-template-columns: 1fr ;
+    }
+    .questionnaire__topBlock , .questionnaire__bottomBlock{
+        padding: 30px 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1000px) {
+    .profilePage{
+        padding: 40px 5%;
+    }
+    .profilePage__title{
+        width: 100%;
+    }
+    .profilePage__title-description{
+        font-size:0.9rem;
+    }
+    .profilePage__wrapper{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .profilePage__nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .order-data , .title-date{
+        display: none;
+    }
+    .profilePage__nav ul li , .orders__list-item{
+        font-size: 0.9rem;
+    }
+    .content__block{
+        padding: 30px 10px;
+    }
+    .content__block-orders-title ul, .content__block-orders__item ul{
+        grid-template-columns: 20% 20% 40% 20%;
+    }
+    .orders__list-item button{
+        border: none;
+        background-color: #ffffff00;
+        height: auto;
+        text-decoration: underline;
+        color: #0B904B;
+        padding: 0;
+    }
+    .order-infoBlock > p , .content__block.addresses > p , .order-infoBlock__table , .questionnaire-description{
+        width: 100%;
+    }
+    .addresses__inputs , .questionnaire__inputs{
+        grid-template-columns: 1fr ;
+    }
+    .questionnaire__topBlock , .questionnaire__bottomBlock{
+        padding: 30px 10px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .profilePage{
+        padding: 30px 3.5%;
+    }
+    .profilePage__title{
+        width: 60%;
+    }
+    .profilePage__wrapper{
+        gap: 15px;
+    }
+}
+@media (min-width: 2100px) {
+    .profilePage{
+        padding: 30px 9%;
+    }
+    .profilePage__wrapper{
+        gap: 35px;
+    }
+}
+
+
+body.dark-theme{
+    background: #212123;
+    color: #FAFAFA;
+
+}
+body.dark-theme h1 , body.dark-theme p , body.dark-theme h3 , body.dark-theme a , .profilePage__title-description {
+    color: #FAFAFA;
+}
+body.dark-theme .content__block h2 , body.dark-theme .content__block p , body.dark-theme .content__block h3 , body.dark-theme .order-infoBlock__table div , .user-payinfoBlock h3{
+    color: #1C2434 ;
+}
+
+body.dark-theme .user-payinfoBlock p {
+    color: #212123b7 ;
+}

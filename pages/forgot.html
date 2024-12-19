@@ -12,7 +12,7 @@
     <link rel="icon" href="../img/image 1 (1).svg" type="image/svg+xml">
     <link rel="icon" href="../img/image 1 (1).svg" type="image/svg+xml">
     <link rel="stylesheet" href="../style/header-footer.css">
-    <link rel="stylesheet" href="../style/auth.css">
+    <link rel="stylesheet" href="../style/forgot.css">
     <link rel="stylesheet" href="../style/sidebar.css">
 
     <title>ЗВУКОБАЗА Онлайн</title>
@@ -48,7 +48,7 @@
                 <a href="pages/shop.html" class="navigation-link">Магазин</a>
               </li>
               <li class="navigation-item profile-item">
-                <a href="auth.html" class="navigation-link">
+                <a href="profile.html" class="navigation-link">
                   <img src="../img/Icon (1).svg" alt="Личный кабинет" class="navigation-icon">
                   Личный кабинет
                 </a>
@@ -128,62 +128,24 @@
             </div>
 
         </div>
-        <section class="authPage">
-            <h1 class="authPage-title">Мой аккаунт</h1>
-            <p class="authPage-description">Авторизируйтесь в существующий аккаунт или создайте новый</p>
-            <div class="authPage-forms">
-
-                <div class="authPage-forms-item auth">
-                    <h1>Авторизация</h1>
-                    <form action="#">
-                        <div class="authPage-forms-item-email">
+        <section class="forgotPage">
+            <h1 class="forgotPage-title">Мой аккаунт</h1>
+            <p class="forgotPage-description">Авторизируйтесь в существующий аккаунт или создайте новый</p>
+                <div class="forgotPage-forms-item">
+                    <h1>Забыли пароль</h1>
+                    <form action="#" name="forgot">
+                        <div class="forgotPage-forms-item-email">
                             <p>Имя пользователя или E-mail</p>
-                            <div class="authPage-forms-item-inputBlock">
-                                <input type="email" placeholder="Введите свое имя пользователя">
-                                <span><img src="../img/Group (4).svg"></span>
+                            <div class="forgotPage-forms-item-inputBlock">
+                                <input type="text" placeholder="Письмо восстановления было отправлено" name="email">
+                                <span><img src="../img/Icon (7).svg"></span>
                             </div>
                         </div>
-                        <div class="authPage-forms-item-email">
-                            <p>Пароль</p>
-                            <div class="authPage-forms-item-inputBlock">
-                                <input type="password" placeholder="Введите свой пароль">
-                                <span><img src="../img/Group (5).svg"></span>
-                            </div>
+                        <div class="forgotPage-forms-item-description">
+                            <p>Забыли свой пароль? Укажите свой Email или имя пользователя. Ссылку на создание нового пароля вы получите по электронной почте</p>
                         </div>
-                        <div class="authPage-forms-item-checkboxBlock">
-                            <label class="custom-checkbox">
-                                <input type="checkbox" name="checkbox" />
-                                <span></span>
-                                Запомнить меня
-                            </label>
-                        </div>
-
-                        <div class="authPage-forms-item-btnBlock">
-                            <button type="submit" class="authPage-forms-item-btn">Войти</button>
-                        </div>
-                        <div class="authPage-forms-item-forgot">Не получается войти ? <a href="forgot.html"> Забыли пароль</a>
-                        </div>
-                    </form>
-                </div>
-                <div class="authPage-forms-item signup">
-                    <h1>Регистрация</h1>
-                    <form action="#">
-                        <div class="authPage-forms-item-email">
-                            <p>E-mail</p>
-                            <div class="authPage-forms-item-inputBlock">
-                                <input type="email" placeholder="Введите свое имя пользователя">
-                                <span><img src="../img/Group (4).svg"></span>
-                            </div>
-                        </div>
-                        <div class="authPage-forms-item-description">
-                            <p>Ссылка для установки нового пароля будет отправлена ​​на ваш адрес электронной почты.</p>
-                            <p>Ваши личные данные будут использоваться для упрощения вашего дальнейшего взаимодействия с
-                                сайтом, управления доступом к вашему аккаунту и других целей, описанных в документе <a
-                                    href="#" target="_blank">политика конфиденциальности.</a> </p>
-
-                        </div>
-                        <div class="authPage-forms-item-btnBlock">
-                            <button type="submit" class="authPage-forms-item-btn">Регистрация</button>
+                        <div class="forgotPage-forms-item-btnBlock">
+                            <button type="submit" class="forgotPage-forms-item-btn">Сброс пароля</button>
                         </div>
                     </form>
                 </div>

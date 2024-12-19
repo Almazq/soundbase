@@ -1,0 +1,220 @@
+.forgotPage {
+    width: 100%;
+    padding: 30px 8%;
+}
+
+.forgotPage-title {
+    font-family: 'Montserrat Bold';
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 54.86px;
+    color: #212123;
+    margin-bottom: 15px;
+}
+
+.forgotPage-description {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #212123;
+}
+
+.forgotPage-forms {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.forgotPage-forms-item {
+    width: 48%;
+    height: auto;
+    background: #FCFCFC;
+    border: 1px solid #2121230D;
+    box-shadow: 0px 8px 13px -3px #00000012;
+    padding: 40px 35px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.forgotPage-forms-item h1 {
+    font-family: 'Montserrat Bold';
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #212B36;
+    margin-bottom: 25px;
+}
+
+.forgotPage-forms-item.auth form p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #0a0a0a;
+
+}
+
+.forgotPage-forms-item form {
+    width: 100%;
+    height: 100%;
+}
+
+.forgotPage-forms-item-inputBlock {
+    width: 100%;
+    margin-top: 6px;
+    position: relative;
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.forgotPage-forms-item-inputBlock input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 33px 0 20px;
+    border-radius: 9px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: 1px solid;
+
+    border: 1px solid #0B904B;
+
+
+
+}
+
+.forgotPage-forms-item-inputBlock span {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translate(0%, -50%);
+
+}
+.forgotPage-forms-item-btnBlock{
+    width: 100%;
+    margin: 20px 0;
+    
+}
+.forgotPage-forms-item-btn{
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    background: #0B904B;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+    cursor: pointer;
+
+}
+.forgotPage-forms-item-description{
+    width: 100%;
+    height: auto;
+    padding: 0 5px;
+    margin-bottom: 55px;
+}
+.forgotPage-forms-item-description p{
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #21212388;
+}
+.forgotPage-forms-item , .forgotPage-forms-item-email{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #0a0a0a;
+}
+.forgotPage-forms-item-forgot{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #64748B;
+
+
+}
+.forgotPage-forms-item-forgot a{
+    color: #0B904B;
+    text-decoration: none;
+    margin-left: 3px;
+}
+
+
+@media (max-width: 576px) {
+    .forgotPage {
+        width: 100%;
+        padding: 30px 3%;
+    }
+    .forgotPage-forms {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        margin-top: 50px;
+    }
+    .forgotPage-title{
+        font-size: 2.2rem;
+    }
+    .forgotPage-description , .forgotPage-title{
+        padding: 0 5%;
+    }
+    
+    .forgotPage-forms-item {
+        padding: 20px;
+        border-radius: 30px;
+    }
+    .forgotPage-forms-item-inputBlock input {
+        padding: 0 30px 0 15px;
+        font-size: 0.9rem;
+    }
+    .forgotPage-forms-item-forgot{
+        font-size: 0.8rem;
+    }
+    .forgotPage-forms-item{
+        width: 98%;
+        margin-left: 1%;
+    }
+}
+@media (min-width: 576px) and (max-width: 759px) {
+    .forgotPage-forms-item{
+        width: 100%;
+    }
+}
+
+@media (min-width: 759px) and (max-width: 1024px) {
+    .forgotPage {
+        width: 100%;
+        padding: 30px 4%;
+    }
+    .forgotPage-forms{
+        grid-template-columns: 1fr;
+    }
+    .forgotPage-forms-item{
+        width: 65%;
+    }
+}
+
+body.dark-theme{
+    background: #212123;
+
+}
+body.dark-theme h1 , body.dark-theme p , body.dark-theme h2 , body.dark-theme h3 , body.dark-theme a {
+    color: #FAFAFA;
+}
+body.dark-theme .forgotPage-forms h1 , body.dark-theme .forgotPage-forms h2 , body.dark-theme .forgotPage-forms h3 , body.dark-theme .forgotPage-forms p ,body.dark-theme .forgotPage-forms a{
+    color: #000 !important;
+}

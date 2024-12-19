@@ -311,3 +311,7 @@ body.dark-theme h1 , body.dark-theme p , body.dark-theme h2 , body.dark-theme h3
 body.dark-theme .sidebar.open ,body.dark-theme .sidebar.open h1 , body.dark-theme .sidebar.open p , body.dark-theme .sidebar.open h2 , body.dark-theme .sidebar.open h3 , body.dark-theme .sidebar.open a{
     color: #000 !important;
 }
+body.dark-theme .footer .logo-title  {
+    color: #FAFAFA;
+
+}

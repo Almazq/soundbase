@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ЗВУКОБАЗА Онлайн - сервис для поиска и прослушивания музыки. Лучшие треки для ваших нужд.">
+    <meta name="keywords" content="музыка, онлайн, треки, каталог, аудио">
+    <meta name="author" content="ЗВУКОБАЗА">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../img/image 1 (1).svg" type="image/svg+xml">
+    <link rel="icon" href="../img/image 1 (1).svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../style/header-footer.css">
+    <link rel="stylesheet" href="../style/profile.css">
+    <link rel="stylesheet" href="../style/sidebar.css">
+
+    <title>ЗВУКОБАЗА Онлайн</title>
+</head>
+
+<body class="dark-theme">
+    <header>
+        <a class="logo" href="../index.html">
+            <div class="logo-img">
+                <img src="../img/image 1 (1).svg" alt="logo">
+            </div>
+            <div class="logo-txt">
+                <p class="logo-title">ЗВУКОБАЗА Онлайн</p>
+                <p class="logo-small_txt">музыкальная лицензионная продакшн-библиотека</p>
+            </div>
+        </a>
+        <nav class="navigation">
+            <div class="navigation-item cart-item">
+                <div  class="navigation-link cart">
+                    <img src="../img/Icon.svg" alt="Корзина" class="navigation-icon"> 
+                    <img src="../img/IconMobile.svg" alt="Корзина" class="navigation-icon mobile"> 
+
+                    <span>Корзина (1)</span>
+                  </div>
+            </div>
+            <div class="navigation-item mobileMenuIcon">
+                <div  class="navigation-link mobile">
+                    <img src="../img/burger-menu-right-svgrepo-com.svg" class="navigation-icon-mobile"> 
+                  </div>
+            </div>
+            <ul class="navigation-list">
+              <li class="navigation-item shop-item">
+                <a href="pages/shop.html" class="navigation-link">Магазин</a>
+              </li>
+              <li class="navigation-item profile-item">
+                <a href="auth.html" class="navigation-link">
+                  <img src="../img/Icon (1).svg" alt="Личный кабинет" class="navigation-icon">
+                  Личный кабинет
+                </a>
+              </li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+        <section class="profilePage">
+            <div class="profilePage__title">
+                <h1>Мой аккаунт</h1>
+                <p>Добро пожаловать, <span>wuph4o</span></p>
+                <div class="profilePage__title-description">Из главной страницы аккаунта вы можете посмотреть ваши <span>недавние заказы</span>, настроить <span>платежный адрес и адрес доставки</span>, а также <span>изменить пароль и основную информацию.</span></div>
+            </div>
+            <div class="profilePage__wrapper">
+                <div class="profilePage__nav">
+                    <ul>
+                        <li data-target="orders" class="nav__item orders nav__item--active">Заказы</li>
+                        <li data-target="addresses" class="nav__item addresses">Адреса</li>
+                        <li data-target="form" class="nav__item form">Анкета</li>
+                        <li data-target="logout" class="nav__item logout"><a href="auth.html">Выйти</a></li>
+                    </ul>
+                </div>
+                <div class="profilePage__content">
+                    <div class="profilePage__content__row">
+                    
+                        <div id="orders" class="content__block ordersBlock content__block--active">
+    
+                            <!-- ORDERS -->
+    
+                            <h2>Заказы</h2>
+    
+                            <!-- <div class="content__block-order-empty">
+                                <p>Заказов ещё не создано.</p>
+                                <a href="shop.html">Просмотр товаров</a>
+                            </div> -->
+    
+                            <div class="content__block-orders">
+                                <div class="content__block-orders-title">
+                                    <ul>
+                                        <li class="orders__list-title-item">Заказ</li>
+                                        <li class="orders__list-title-item title-date">Дата</li>
+                                        <li class="orders__list-title-item title-status">Статус</li>
+                                        <li class="orders__list-title-item">Итого</li>
+                                        <li class="orders__list-title-item">Действия</li>
+                                    </ul>
+                                </div>
+                                <div class="content__block-orders__item">
+                                    <ul>
+                                        <li class="orders__list-item order-id">№54</li>
+                                        <li class="orders__list-item order-data">20.04.2024</li>
+                                        <li class="orders__list-item order-status">Выполнен</li>
+                                        <li class="orders__list-item">500 руб. / 1 товар</li>
+                                        <li class="orders__list-item"><button class="order-btn">Просмотр</button></li>
+                                    </ul>
+                                </div>
+                                <div class="content__block-orders__item">
+                                    <ul>
+                                        <li class="orders__list-item order-id">№54</li>
+                                        <li class="orders__list-item order-data">20.04.2024</li>
+                                        <li class="orders__list-item order-status">Выполнен</li>
+                                        <li class="orders__list-item">500 руб. / 1 товар</li>
+                                        <li class="orders__list-item"><button class="order-btn">Просмотр</button></li>
+                                    </ul>
+                                </div>
+                                <div class="content__block-orders__item">
+                                    <ul>
+                                        <li class="orders__list-item order-id">№54</li>
+                                        <li class="orders__list-item order-data">20.04.2024</li>
+                                        <li class="orders__list-item order-status">Выполнен</li>
+                                        <li class="orders__list-item">500 руб. / 1 товар</li>
+                                        <li class="orders__list-item"><button class="order-btn">Просмотр</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <!-- ORDERS END-->
+                        </div>
+                        <div id="order-info" class="content__block order-infoBlock">
+                            <h3>Информация о заказе</h3>
+                            <p>Заказ <span>№54</span> был оформлен <span>20.04.2024</span> и находится в статусе  <span>Выполнен</span> . </p>
+                            <div class="order-infoBlock__table">
+                                <div class="order-infoBlock__table-title">
+                                    <div>Товар</div>
+                                    <div>Итого</div>
+                                </div>
+                                <div class="order-infoBlock__table-item">
+                                    <div>Пакет 50 треков х 1</div>
+                                    <div>500 руб.</div>
+                                </div>
+                                <div class="order-infoBlock__table-results">
+                                    <div>Подытог:</div>
+                                    <div>500 руб.</div>
+                                </div>
+                                <div class="order-infoBlock__table-results">
+                                    <div>Способ оплаты:</div>
+                                    <div>Чековые платежи</div>
+                                </div>
+                                <div class="order-infoBlock__table-results">
+                                    <div>Итого:</div>
+                                    <div>500 руб.</div>
+                                </div>
+                            </div>
+                            <a href="order.html" class="order-infoBlock__btn" target="_blank">Заказать снова</a>
+                        </div>
+                        <div id="addresses" class="content__block addresses">
+                            <h2>Адреса</h2>
+                            <p>Следующие адреса будут использованы по умолчанию при оформлении заказов.</p>
+                            <div class="addresses__inputs">
+                                <form>
+                                    <p>Платежный адрес</p>
+                                    <input type="text" placeholder="Вы ещё не настроили этот тип адреса.">
+                                    <button type="submit">Добавить</button>
+                                </form>
+                                <form>
+                                    <p>Адрес доставки</p>
+                                    <input type="text" placeholder="Вы ещё не настроили этот тип адреса.">
+                                    <button type="submit">Добавить</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="form" class="content__block questionnaire">
+                            <form action="#">
+                                <div class="questionnaire__topBlock">
+                                    <h2>Анкета</h2>
+
+                                    <div class="questionnaire__inputs">
+                                        <div>
+                                            <p>Имя</p>
+                                            <input type="text" placeholder="Введите свое имя" name="name">
+                                        </div>
+                                        <div>
+                                            <p>Фамилия</p>
+                                            <input type="text" placeholder="Введите свое фамилию" name="surname">
+                                        </div>
+                                        <div>
+                                            <p>Отображаемое имя</p>
+                                            <input type="text" placeholder="Введите отображаемое имя" name="login" value="wuph4o">
+                                        </div>
+                                        <div>
+                                            <p>E-mail</p>
+                                            <input type="email" placeholder="Введите свой e-mail" name="email">
+                                        </div>
+                                    </div>
+                                    <p class="questionnaire-description">Так ваше имя будет отображаться в разделе аккаунта и при публикации отзывов</p>
+                                </div>
+
+                                <div class="questionnaire__bottomBlock">
+                                    <h2>Смена пароля</h2>
+
+                                    <div class="questionnaire__bottomBlock-inputConteiner">
+                                        <p>Действующий пароль (не заполняйте, чтобы оставить прежний)</p>
+                                        <div class="questionnaire__bottomBlock-input">
+                                            <input type="password" placeholder="*************" id="password-input" >
+                                            <span><img src="../img/Icon (8).svg" class="input-passshowBtn"></span>
+                                        </div>
+                                    </div>
+                                    <div class="questionnaire__bottomBlock-inputConteiner">
+                                        <p>Новый пароль (не заполняйте, чтобы оставить прежний)</p>
+                                        <div class="questionnaire__bottomBlock-input">
+                                            <input type="password" placeholder="*************" >
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="questionnaire__bottomBlock-inputConteiner">
+                                        <p>Подтвердите новый пароль</p>
+                                        <div class="questionnaire__bottomBlock-input">
+                                            <input type="password" placeholder="*************" >
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="questionnaire-btn">Сохранить изменения</button>
+                                </div>
+                                
+                            </form>
+                            
+                        </div>
+    
+                    </div>
+
+                    <div class="user-payinfoBlock">
+                        <h3>Платежный адрес</h3>
+                        <p>Олег Качанко</p>
+                        <p>Генерала Белобородова</p>
+                        <p>Москва</p>
+                        <p>Москва</p>
+                        <p>124560</p>
+                        <p>info@zvukobaza.ru</p>
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+
+
+
+        <div class="sidebar">
+            <div class="sidebar__content">
+                <div class="sidebar__content-title">
+                    <div>
+                        <h1>Ваша корзина</h1>
+                        <p class="sidebar__content-title-count">3 элемента</p>
+                    </div>
+                    <div class="sidebar__content-close-btn">
+                        <img src="../img/Icon (6).svg">
+                    </div>
+
+                </div>
+                <div class="sidebar__content-list">
+                    <div class="sidebar__content-list-item">
+                        <div class="sidebar__content-list-item-imgblock">
+                            <img src="../img/Group 1261152749.svg" alt="старт">
+                        </div>
+                        <div class="sidebar__content-list-item-info">
+                            <p class="sidebar__content-list-item-info-name">Старт - <span>50 треков</span></p>
+                            <p class="sidebar__content-list-item-info-price">500 <span>руб.</span></p>
+                            <p class="sidebar__content-list-item-info-count">Подписка на 50 треков</p>
+                            <p class="sidebar__content-list-item-info-delete">Удалить товар</p>
+                        </div>
+                        <div class="sidebar__content-list-item-price">
+                            <h3>500 <span>руб.</span></h3>
+                        </div>
+                    </div>
+                    <div class="sidebar__content-list-item">
+                        <div class="sidebar__content-list-item-imgblock">
+                            <img src="../img/Group 1261152749 (3).svg" alt="старт">
+                        </div>
+                        <div class="sidebar__content-list-item-info">
+                            <p class="sidebar__content-list-item-info-name">Про - <span>100 треков</span></p>
+                            <p class="sidebar__content-list-item-info-price">1 000 <span>руб.</span></p>
+                            <p class="sidebar__content-list-item-info-count">Подписка на 100 треков</p>
+                            <p class="sidebar__content-list-item-info-delete">Удалить товар</p>
+                        </div>
+                        <div class="sidebar__content-list-item-price">
+                            <h3>1 000 <span>руб.</span></h3>
+                        </div>
+                    </div>
+                    <div class="sidebar__content-list-item">
+                        <div class="sidebar__content-list-item-imgblock">
+                            <img src="../img/Group 1261152749 (2).svg" alt="старт">
+                        </div>
+                        <div class="sidebar__content-list-item-info">
+                            <p class="sidebar__content-list-item-info-name">Бизнес <span>100 треков</span></p>
+                            <p class="sidebar__content-list-item-info-price">10 000 <span>руб.</span></p>
+                            <p class="sidebar__content-list-item-info-count">Подписка на 1000 треков</p>
+                            <p class="sidebar__content-list-item-info-delete">Удалить товар</p>
+                        </div>
+                        <div class="sidebar__content-list-item-price">
+                            <h3>10 000 <span>руб.</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebat__content-result">
+                    <div class="sidebar__content-result-title">
+                        <h1>Подытог</h1>
+                        <p class="sidebar__content-result-title-price">11 500 <span>руб.</span></p>
+                    </div>
+                    <p>Стоимость доставки, налога и скидок рассчитывается при оформлении заказа.</p>
+                    <div class="sidebar__content-result-btn">
+                        <a href="cart.html" class="sidebar__content-result-btn-showcart">Просмотр корзины</a>
+                        <a href="order.html" class="sidebar__content-result-btn-buy">Перейти к оформлению</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+            <a class="logo" href="../index.html">
+                <div class="logo-img">
+                    <img src="../img/image 1 (1).svg" alt="logo">
+                </div>
+                <div class="logo-txt">
+                    <p class="logo-title">ЗВУКОБАЗА Онлайн</p>
+                    <p class="logo-small_txt">музыкальная лицензионная продакшн-библиотека</p>
+                </div>
+            </a>
+            <div class="footer__info-phone">
+                <p>Наш телефон:</p>
+                <a href="tel:+74951755785" class="footer__info-phone-link">+7 495 175-57-85</a>
+            </div>
+            <div class="footer__info-social">
+                <a href="#"><img src="../img/soc1.svg"></a>
+                <a href="#"><img src="../img/Mask group (1).svg"></a>
+
+            </div>
+        </div>
+        <div class="footer__navigator">
+            <ul>
+               <li><a href="about.html">О нас</a></li>
+                <li><a href="info.html">Политика конфиденциальности </a></li>
+                <li><a href="info.html">Пользовательское соглашение</a></li>
+            </ul>
+            <p>© ООО «РИО Продакшн». </br> Все права защищены.</p>
+
+        </div>
+    </footer>
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/profile.js"></script>
+    <script src="../js/header-footer.js"></script>
+
+</body>
+
+</html>
